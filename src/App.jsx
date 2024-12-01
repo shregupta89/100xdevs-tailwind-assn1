@@ -15,7 +15,7 @@ function App() {
 }
 
 export default App;
-
+//hello
 function MainContent() {
   return (
     <div className='flex-1  bg-gray-100 '>
@@ -23,8 +23,8 @@ function MainContent() {
         <img className='h-full w-full' src="banner.jpg" alt="banner" />
       </div>
 
-      <div className='grid grid-cols-10 gap-8 p-8'>
-          <div className="col-span-2">
+      <div className='grid grid-cols-1 md:grid-cols-10 gap-8 p-8'>
+          <div className="col-span-1 md:col-span-2">
             <ProfileCard/>
           </div>
           <div className="col-span-5 m-4 p-3 flex flex-col gap-6 ">

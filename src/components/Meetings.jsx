@@ -46,12 +46,12 @@ export default Meetings
 function MeetingComponent({meetings,scheduled,WebinarName,index}) {
     console.log(meetings.length)
   return (
-    <div className={`grid grid-cols-5 border-b py-2 border-gray-300 ${index===meetings.length-1?'border-b-0':''}`}  >
-        <div className='p-2 col-span-1 border-r border-blue-200'>
+    <div className={`grid grid-cols-1 lg:grid-cols-5 border-b py-2 border-gray-300 ${index===meetings.length-1?'border-b-0':''}`}  >
+        <div className='p-2 col-span-1 border-r-0 lg:border-r border-blue-200'>
             <p className='font-semibold'>11.30 AM</p>
             <p className='opacity-50 text-sm'>11.30 AM</p>
         </div>
-        <div className='p-2 col-span-4'>
+        <div className='p-2 col-span-1 lg:col-span-4'>
             <div className='flex gap-2 items-center'>
                 <p className='opacity-50 text-sm'>{scheduled}</p>
                 <Video />
